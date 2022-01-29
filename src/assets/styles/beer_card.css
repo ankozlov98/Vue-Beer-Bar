@@ -1,0 +1,79 @@
+.beer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beer-box-heading {
+    margin: 20px auto;
+    padding: 10px;
+
+    width: 90%;
+
+    background-color: rgba(253, 249, 244, 0.521);
+    text-align: center;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.beer-box-name {
+    font-size: 36px;
+}
+.beer-box-brand {
+    font-size: 28px;
+    font-style: italic;
+}
+
+.beer-box-info {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.beer-box-opinion {
+    border: 2px black dotted;
+    background-color: rgba(253, 249, 244, 0.521);;
+
+    font-size: 20px;
+    font-style: italic;
+
+    padding: 5px;
+    margin: 5px;
+    margin-top: -10px;
+}
+
+table {
+    width: 450px;
+    border: 2px black solid;
+    border-collapse: collapse;
+    margin: 20px;
+    text-align: center;
+}
+
+td {
+    height: 35px;
+    width: 49%;
+    border: 1px black solid;
+    margin: 0;
+    background-color: rgba(226, 226, 226, 0.521);;
+}
+thead {
+    background-color: rgba(253, 249, 244, 0.521);;
+}
+
+
+
+.beer-box-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.beer-box-single-button {
+    height: 40px;
+    width: 80px;
+
+    margin: 12.5px;
+}

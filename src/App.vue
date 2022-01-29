@@ -9,9 +9,16 @@
         
 
         <section class="beer-box info-container">
+          <section class='beer-box-heading'>
+            <section class="beer-box-name">{{beer.name}}</section>
+            <section class="beer-box-brand">{{beer.brand}}</section>
+          </section>
           <section class="beer-box-opinion" v-if="opinion">We Think It Is {{opinion}}% Match </section>
-          <h2 v-if="beer">{{beer.name}}</h2>
-          <button v-on:click="handleBeerChange">Change</button>
+
+          <h6 v-if="beer">{{beer}}</h6>
+          
+          <BeerBox :beer="beer" :handleBeerChange="handleBeerChange" v-if="beer" />
+          
         </section>
       </section>
       
@@ -32,11 +39,14 @@ import './assets/styles/hover.css'
 import './assets/styles/beer_card.css'
 
 import PersonBox from './components/PersonBox.vue';
+import BeerBox from './components/BeerBox.vue';
+
 
 export default {
     name: "app",
     components: {
-      PersonBox
+      PersonBox,
+      BeerBox
     },
 
     data() {
@@ -54,7 +64,7 @@ export default {
 
         this.opinion = this.getRandomInt(90,100)
     },
-    components: { PersonBox },
+    components: { PersonBox, BeerBox },
     methods: {
       getRandomInt(min, max) {
           min = Math.ceil(min);
