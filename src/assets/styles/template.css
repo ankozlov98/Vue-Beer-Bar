@@ -19,7 +19,7 @@
   .common-bg-color {
     margin: 25px;
     margin-bottom: 0;
-    
+
     padding: 10px;
 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.192),  rgba(0, 0, 0, 0.733));
@@ -47,4 +47,8 @@
     box-shadow: 10px 16px rgba(0, 0, 0, 0.288);
 
     border-radius: 12px 0px 12px 0px;
+  }
+
+  .box {
+      height: auto;
   }

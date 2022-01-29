@@ -1,7 +1,7 @@
 <template>
   <main id="app">
     <article class="common-bg-color">
-      <section class="heading">
+      <section class="main-heading">
         <h1>Hello</h1>
       </section>
       <section class="all-info-container">
@@ -27,10 +27,18 @@
 
 
 <script>
+
+
+
 import "./assets/styles/person_card.css";
 import "./assets/styles/template.css";
 import "./assets/styles/hover.css";
 import "./assets/styles/beer_card.css";
+
+
+import "./assets/styles/modal_view.css";
+import "./assets/styles/media_query.css";
+
 
 import PersonBox from "./components/PersonBox.vue";
 import BeerBox from "./components/BeerBox.vue";
@@ -51,7 +59,7 @@ export default {
       person_job: {},
       person_address: {},
       person_subscription: {},
-      
+
       beer: {},
       opinion: 0,
       

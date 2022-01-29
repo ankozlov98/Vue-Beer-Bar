@@ -1,5 +1,5 @@
 <template>
-    <article class="person-box info-container">
+    <article class="box person-box info-container">
           <h2  class="person-box-header">{{person.first_name}} {{person.last_name}}</h2>
           <img :src=person.avatar class="person-image"/>
             <section class="person-info">
@@ -94,7 +94,7 @@
 
 <script>
 
-import '../assets/styles/modal_view.css'
+
 
 export default({
     name: 'person-box',

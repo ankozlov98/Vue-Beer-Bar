@@ -1,17 +1,16 @@
 <template>
 
-<section class="beer-box info-container">
+<section class="box beer-box info-container">
 
-          <section class='beer-box-heading'>
-            <section class="beer-box-name">{{beer.name}}</section>
-            <section class="beer-box-brand">{{beer.brand}}</section>
-          </section>
+    <section class='beer-box-heading'>
+        <section class="beer-box-name">{{beer.name}}</section>
+        <section class="beer-box-brand">{{beer.brand}}</section>
+    </section>
 
-          <section class="beer-box-opinion">We Think It Is {{opinion}}% Match </section>
+    <section class="beer-box-opinion">We Think It Is {{opinion}}% Match </section>
 
     <section class="beer-box-info"> 
-            <section class="beer-box-table">
-                <table>
+                <table class="beer-box-table">
                   <thead>
                       <td>Criteria</td>
                       <td>Value</td>
@@ -33,7 +32,6 @@
                     <td>{{beer.yeast}}</td>
                   </tr>
                 </table>
-              </section>
               <section class="beer-box-buttons">
                   <button v-on:click="handleBeerChange" class="beer-box-single-button">Change</button>
                   <button v-on:click="showModal = true" class="beer-box-single-button">Learn More</button>
