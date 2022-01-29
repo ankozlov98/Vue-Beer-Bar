@@ -1,4 +1,14 @@
 <template>
+
+<section class="beer-box info-container">
+
+          <section class='beer-box-heading'>
+            <section class="beer-box-name">{{beer.name}}</section>
+            <section class="beer-box-brand">{{beer.brand}}</section>
+          </section>
+
+          <section class="beer-box-opinion">We Think It Is {{opinion}}% Match </section>
+
     <section class="beer-box-info"> 
             <section class="beer-box-table">
                 <table>
@@ -30,6 +40,7 @@
               </section>
               <section class="beer-box-social-media"></section>
           </section>
+          </section>
 </template>
 
 <script>
@@ -37,6 +48,8 @@
 
 export default ({
      name: 'BeerBox',
-     props: ['handleBeerChange', 'beer']
+     props: ['handleBeerChange', 'beer', 'opinion'],
+     
+
 })
 </script>

@@ -45,6 +45,7 @@
 
 table {
     width: 450px;
+    
     border: 2px black solid;
     border-collapse: collapse;
     margin: 20px;
@@ -52,7 +53,7 @@ table {
 }
 
 td {
-    height: 35px;
+    height: 45px;
     width: 49%;
     border: 1px black solid;
     margin: 0;

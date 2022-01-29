@@ -5,21 +5,14 @@
         <h1>Hello</h1>
       </section>
       <section class="all-info-container">
-        <PersonBox :person="person" v-if="person" />
+        <PersonBox :person="person" :job="person_job" :adress="person_address" v-if="person" />
         
 
-        <section class="beer-box info-container">
-          <section class='beer-box-heading'>
-            <section class="beer-box-name">{{beer.name}}</section>
-            <section class="beer-box-brand">{{beer.brand}}</section>
-          </section>
-          <section class="beer-box-opinion" v-if="opinion">We Think It Is {{opinion}}% Match </section>
-
-          <h6 v-if="beer">{{beer}}</h6>
+        
           
-          <BeerBox :beer="beer" :handleBeerChange="handleBeerChange" v-if="beer" />
+          <BeerBox :beer="beer" :handleBeerChange="handleBeerChange" :opinion='opinion' v-if="beer && opinion" />
           
-        </section>
+        
       </section>
       
       
@@ -54,6 +47,8 @@ export default {
             url_base_person: "https://random-data-api.com/api/users/random_user",
             url_base_beer: "https://random-data-api.com/api/beer/random_beer",
             person: {},
+            person_job: {},
+            person_address: {},
             beer: {},
             opinion: 0
         };
@@ -73,13 +68,18 @@ export default {
       },
       fetchPerson () {
             fetch(this.url_base_person)
-            .then((res) => { return res.json(); })
-            .then((res) => { this.person = res; });
+            .then((res) => { return res.json()})
+            .then((res) => { 
+              this.person = res;
+              this.person_job = res.employment;
+              this.person_address = res.address;
+              });
       },
       fetchBeer() {
         fetch(this.url_base_beer)
             .then((res) => { return res.json(); })
             .then((res) => { this.beer = res; })
+        this.opinion = this.getRandomInt(90,100)
       },
       handleBeerChange() {
         this.getRandomInt()
