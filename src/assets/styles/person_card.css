@@ -56,9 +56,18 @@
     border-collapse: collapse;
     margin: 0;
     text-align: center;
+    margin-right: 5px;
 }
 
 .person-info-data-name {
     width: 30%;
     font-style: italic;
+}
+
+.social-networks {
+    grid-area: social-networks;
+}
+
+.person-modal-open-button {
+    width: 100%;
 }
