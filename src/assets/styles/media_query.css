@@ -75,6 +75,7 @@
 .person-image {
     width: 310px;
     margin: 5px;
+    align-self: center;
 }
 
 .person-info {

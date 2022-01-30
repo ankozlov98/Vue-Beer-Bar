@@ -2,7 +2,7 @@
   <main id="app">
     <article class="common-bg-color">
       <section class="main-heading">
-        <h1>Hello</h1>
+        Hello, {{person.first_name}}! This Is Your Personal Space and We Have Chosen The Best Beverage For You
       </section>
       <section class="all-info-container">
         <PersonBox

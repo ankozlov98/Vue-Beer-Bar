@@ -52,3 +52,14 @@
   .box {
       height: auto;
   }
+
+  .main-heading {
+      background-color: cornsilk;
+      font-size: 24px;
+      height: auto;
+      vertical-align: center;
+      text-align: center;
+      padding: 15px;
+      width: 100%;
+      border-bottom: 1px black solid;
+  }

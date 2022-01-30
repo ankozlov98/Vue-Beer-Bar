@@ -13,6 +13,7 @@
 .person-image {
   border: 1px black dotted;
   grid-area: person-image;
+  align-self: end;
   width: 100%;
   background-color: rgba(240, 255, 255, 0.692);
 
@@ -68,8 +69,13 @@
 
 .social-networks {
     grid-area: social-networks;
+    align-self: start;
+    width: 96%;
+    margin: 5px auto;
 }
 
 .person-modal-open-button {
     width: 100%;
+    height: 25px;
+    margin: 0 auto;
 }
